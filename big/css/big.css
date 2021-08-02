@@ -1,0 +1,198 @@
+/* BIG Website */
+
+html {
+    background-color: #ccc;
+}
+
+main {
+    background-color: #fff;
+    width:80%;
+    margin:auto;
+}
+
+
+h1 a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1 {
+    text-align:center;
+    margin:0;
+    padding:1em;
+
+}
+
+h2.subheader {
+    padding-left:2em;
+    font-style:bold;
+}
+
+h2 h3 {
+ font-style:bold;
+ font-size:1em;
+}
+
+p {
+    font-size:1.2em;
+    margin:0.5em;
+}
+
+address {
+    font-style:normal;
+}
+
+div.gallery {
+    text-align:center;
+
+}
+
+figure {
+    display:inline-block;
+    margin:.25%;
+}
+ 
+img {
+    width:100%;
+    border:1px solid #000;
+}
+
+/*START Left Column styles */
+section {
+    float: left;
+    width:65%;
+}
+/*END Left Column styles */
+
+/*START Right Column styles */
+aside {
+    float: right;
+    width: 34%;
+    font-style:normal;
+}
+/*End Right Column styles */
+
+
+section.fullwidth {
+    width:100%
+    margin:2em;
+    background-color:#fff;
+}
+
+
+/*START-EMBED RESPONSIVELY STYLES */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%;
+     } 
+    
+.embed-container iframe {
+     position: absolute;
+     top: 0; 
+     left: 0; 
+     width: 100%; 
+     height: 100%; 
+    }
+/*END -EMBED RESPONSIVELY STYLES */
+
+/*HIDE AGENDA VIEW CALENDER */
+
+div.embed-container.agenda-view { 
+    display:none;
+}
+
+/* DESKTOP */
+@media all and (min-width: 1400px) {
+
+    section {
+        width:65%;
+        float:left
+    }
+
+    aside {
+        width:30%;
+        float:right;
+    }
+
+    img.tablet, img.phone {
+        display:none
+    }
+}
+
+/* TABLET */
+
+@media all and (min-width:601px) and (max-width:600px) {
+
+    div.wrapper {
+        width:90%
+    }
+
+    section {
+        width:55%;
+        float:left;
+    }
+
+    aside {
+        width:40%,
+        float:right
+    }
+
+    img.desktop, img.phone {
+
+        display:none;
+    }
+
+}
+
+/* CALENDAR RULES FOR PHONE */
+@media all and (max-width:1440px) {
+
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+
+    /* HIDE Month View Calendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+
+}
+
+/* PHONE */ 
+@media all and (max-width: 600px) {
+
+    div.wrapper {
+        width:100%;
+    }
+}
+
+footer {
+    padding:1em; /*Top Right Bottom Left */
+    background-color:#fff;
+    text-align:center;
+    clear:both;
+}
+
+/* MOBILE STYLES */
+
+@media all and (max-width:600px) {
+
+main {
+        width:100%;
+    }
+
+section {
+        float: none;
+        width:100%;
+    }
+    
+aside {
+        float: none;
+        width: 100%;
+    }
+
+}

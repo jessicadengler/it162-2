@@ -1,0 +1,49 @@
+table {
+    border:1px solid darkcyan;
+    width:80%;
+    border-collapse: collapse;
+    margin:auto;
+    background-color:#fff;
+}
+
+h1{
+    text-align: center;
+    color: darkcyan;
+}
+
+h2{
+text-align: center;
+}
+
+
+tr {
+  vertical-align:top;
+}
+
+td,th {
+  border:1px solid darkcyan;
+  padding:.5em;
+}
+
+table.clientinfo {
+    margin:40px auto; /* T R B L */
+}
+
+table.clientinfo th {
+    text-align: left;
+    width:30%;
+}
+
+table.audience th {
+    margin:40px auto; /* T R B L */
+}
+
+table.audience th{
+    width:33.3%;
+}
+
+    
+footer 	{clear:right; text-align:center; margin-top:20px;}	
+
+
+</style>
